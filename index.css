@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Pacifico', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(270deg, #ff005c, #ffb300, #00e8ff, #00ff85, #ff6f00);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: white; /* Change text color to white */
+  display: flex; /* Center content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+table {
+  margin: 20px; /* Add margin for spacing */
+}
+
+table tbody tr th {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  font-size: 35px;
+}
+
+table tbody tr td {
+  font-weight: bold;
+  padding-top: 10px;
+  color: white; /* Ensure table cell text is white */
+}
+
+/* Blinking effect */
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Animation for the background gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
